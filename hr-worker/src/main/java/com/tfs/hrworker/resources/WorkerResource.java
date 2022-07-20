@@ -38,6 +38,11 @@ public class WorkerResource {
 		logger.info("CONFIG = " + testConfig);
 		return ResponseEntity.noContent().build();
 	}
+	@GetMapping(value = "/configs")
+	public ResponseEntity<List<Worker>> getConfigs() {
+		logger.info("CONFIG = " + testConfig);
+		return ResponseEntity.noContent().build();
+	}	
 	
 	@GetMapping
 	public ResponseEntity<List<Worker>> findAll() {
